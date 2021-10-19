@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3111d5aa77.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: rgb(189, 189, 189);
+        }
+    </style>
+
+    <title>Instagram</title>
+</head>
+
+<body>
+    <!--Navbar-->
+
+    <div class="container-fluid p-0">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="index.html">
+                    <i class="fab fa-instagram"></i>
+                    <span class="inst">Instagram</span>
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    </ul>
+                    <div class="col-4 d-grid gap-2 d-md-flex justify-content-md-end">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">
+                            Create a new post
+                        </button>
+                    </div>
+                    <ul class="navbar-nav ">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-cog"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="row ">
+                        <div class="col-12 ">
+                            <textarea class="form-control mb-3" name="" id="" cols="" rows="5"></textarea>
+                            <button type="button" class="btn btn-outline-secondary"><i
+                                    class="fas fa-camera fa-2x"></i></button>
+                            <button type="button" class="btn btn-outline-secondary px-3"><i
+                                    class="fas fa-map-marker-alt fa-2x"></i></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-success">Publish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--Nav cambio de vista-->
+
+    <div class="modo">
+        <ul class="nav justify-content-center pt-3">
+            <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                    <button class="btn btn-outline-secondary " role="button">
+                        <i class="fas fa-grip-horizontal"></i>
+                    </button>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="index2.html" class="nav-link">
+                    <button class="btn btn-outline-secondary" role="button">
+                        <i class="fas fa-stop"></i>
+                    </button>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--Galeria de imagenes-->
+    <div id="galeria2" class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/237/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/238/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/239/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/240/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/241/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/242/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/243/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/244/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 offset-md-3 p-2 ">
+                <div class="card-header bg-white d-flex ">
+                    <div class="col-6">
+                        <h3>My first photo</h3>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="text-end text-muted">1/2</h4>
+                    </div>
+
+                </div>
+                <div class="card">
+                    <img src="https://picsum.photos/id/212/900/500" class="card-img-top" alt="...">
+                    <div class="card-body pb-1">
+                        <h5 class="card-title">23 likes</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content. Some quick example text to build on the card title and make up the bulk
+                            of
+                            the card's content </p>
+                        <div class="mb-2 mx-3 d-flex align-items-end">
+                            <div class="col-1">
+                                <i class="far fa-heart"></i>
+                            </div>
+                            <div class="col-10">
+                                <label for="disabledTextInput" class="form-label"></label>
+                                <input type="text" id="disabledTextInput" class="form-control border-0 p-0"
+                                    placeholder="Comment...">
+                            </div>
+                            <div class="col-1 position-relative">
+                                <div class=" position-absolute bottom-0 end-0"><i class="fas fa-ellipsis-v"></i></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
